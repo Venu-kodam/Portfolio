@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#">Portfolio</a></div>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p style="font-size: 30px;">Hello, <br> This is <span
+                        style="font-size: 40px;font-weight: 700;">Venusai</span></p>
+                <h1>I'm a <span id="designation">Web Developer</span></h1>
+                <img src="./images/pngwing.com.png" width="400" height="400">
+                <a href="./images/Venu resume_WebDevelopment.pdf" class="resume" download>Resume</a>
+            </div>
+        </div>
+        <!------------------ About Section---------- -->
+        <div class="about" id="about">
+            <div class="row">
+                <div class="about-col-img">
+                    <img src="./images/pngwing.com.png" width="350" height="350">
+                </div>
+                <div class="about-col-content">
+                    <h1 class="sub-item" style="margin-bottom: 30px;">About Me</h1>
+                    <p>Hi,my name is Venusai. I am from Hyderabad, India.I have a good amount of knowledge on Web
+                        Development.
+                    </p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Html,Css,Javascript,React JS,Bootstrap</li>
+                            <li><span>Programming Languages</span> <br> Core Java,Jdbc,Servlets,Jsp,Hibernate,SpringBoot
+                            </li>
+                            <li><span>Database</span><br> MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B-Tech (2019-2023)</span><br>Malla Reddy Institute of Technology and Science
+                                (Hyderabad)
+                            </li>
+                            <li><span>Intermediate (2017-2019)</span> <br> Sai sri Junior College (Rajanna Sircilla)
+                            </li>
+                            <li><span>SSC 2017</span> <br> ZP High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------Projects Section---------------- -->
+        <div id="projects">
+            <h1 style="text-align: center;">My Projects</h1>
+            <div class="projects-list">
+                <div class="projects">
+                    <img src="./images/netflix-symbol-black.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone(React)</h3>
+                        <p>A Netflix clone project is a web application that replicates the functionality and
+                            features
+                            of the original Netflix platform. The project involves creating a user-friendly
+                            interface .
+                        </p>
+                        <a href="https://github.com/Venu-kodam/Netflix-Clone-React" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="./images/thunderstorm-3625405_1280.jpg" alt="">
+                    <div class="layer">
+                        <h3>Weather Application React</h3>
+                        <p>The Weather Application is a React-based project that provides users with real-time weather
+                            information and a 7-day forecast for their selected location.</p>
+                        <a href="https://github.com/Venu-kodam/Weather-App" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="https://manychat.com/blog/wp-content/uploads/2021/02/Increase-add-to-cart-rate.png"
+                        alt="">
+                    <div class="layer">
+                        <h3>React Shopping Cart</h3>
+                        <p>Shopping Cart is a e-commerce cart management system designed to enhance the online shopping
+                            experience. Developed using the Redux Toolkit, this project ensures state management is
+                            efficient.</p>
+                        <a href="https://github.com/Venu-kodam/Shopping-cart"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+        <!---------------- Footer  --------------->
+        <div id="contact">
+            <h1 style="text-align: center;">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>venukodam1234@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9348531588</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Venu-kodam"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/venusai-kodam-29a5b21b2/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" style="text-align: center;">
+            <p>Copyright &copy; Made with <span><i class="fa-solid fa-heart"></i></span> by Venusai</p>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName('tab-links');
+        let tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        //script for side bar
+        let sidemenu = document.getElementById('sidemenu')
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!---------------Load the typed js--------------------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!---------------script for typing animation----------------->
+    <script>
+        var typed = new Typed('#designation', {
+            strings: ['Web Developer...', 'React JS Developer...', 'Programmer...'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
